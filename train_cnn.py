@@ -51,6 +51,6 @@ model = Sequential([
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.fit(train_gen, validation_data=val_gen, epochs=10)
 
-# Save the trained model
 model.save(save_model_path)
 print("Model saved at:", save_model_path)
+
